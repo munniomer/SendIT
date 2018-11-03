@@ -139,7 +139,7 @@ body {
 
 /*Displaying form fields in one line ------------ */
 
-form .display-one-line {
+#signup-form .display-one-line {
 
     display: flex;
     width: 100%;
@@ -150,11 +150,11 @@ form .display-one-line {
 
 }
 
-form .float-left {
+#signup-form .float-left {
     width: 50%;
 }
 
-form .float-right {
+#signup-form .float-right {
     
     
     width: 50%;
