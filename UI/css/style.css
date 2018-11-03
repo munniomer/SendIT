@@ -10,3 +10,153 @@ body {
     font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 }
+
+.container {
+    width:85%;
+    margin: 0;
+    overflow: hidden;
+    
+}
+
+/* styling the forms ------------ */
+
+
+#signup-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:400px;
+    background: #fff;
+    padding: 40px;
+    border: 3px solid rgba(0,0,0,.1);
+    box-shadow:0 5px 10px rgba(0,0,0,.2);
+    border-radius: 50px 10px;
+    width: 50%;
+    border-color: #2E8C9E;
+    
+}
+
+
+#signup-box h1 {
+    margin-bottom: 40px;
+    color: #2E8C9E;
+    text-shadow: 0 1px 1px rgba(0,0,0, 10)
+}
+
+#signup-box p {
+    color: #000;
+    margin-bottom: 70px;
+    
+    font-size: 1.3em;
+}
+#signup-box input {
+    width: 80%;
+    box-shadow: none;
+    border: none;
+    outline:none;
+    border-bottom: 2px solid #999;
+    margin-bottom: 40px;
+    font-size: 1.2em;
+    
+}
+
+#signup-box form div {
+    position: relative;
+}
+
+#signup-box form div label {
+    position: absolute;
+    top: 10x;
+    left:0;
+    color:#999;
+    pointer-events: none;
+    transition: .5s;
+    font-size: 1.3em;
+    
+    
+   
+}
+
+#signup-box input:focus ~ label,
+#signup-box input:valid ~ label { 
+    top: -39px;
+    left: 0;
+    
+   
+    color: #2E8C9E;;
+    font-size: 1em;
+    
+
+}
+
+#signup-box #btn-signup {
+    
+    width: 40%;
+    padding: 10px;
+    background: #2E8C9E;
+    border-bottom: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.2em;
+    border-radius: 8px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+   
+ }
+ 
+ #signup-box #btn-signup:hover  {
+     background: #53c0d6;
+     color: #fff;
+       
+ }
+ 
+ 
+ #signup-box #btn-login {
+     width: 50%;
+     padding: 10px;
+     border: none;
+     background-color: inherit;
+     cursor: pointer;
+     color: #2E8C9E;
+     font-size: 1.2em;
+     margin-top: 20px;
+     margin-bottom: 10px;
+    
+     
+     
+ }
+ 
+ #signup-box #btn-login:hover  {
+     
+     background-color:#e3f2fd;
+     color: #2E8C9E;
+     border-radius: 12px;
+    
+ }
+
+
+/*Displaying form fields in one line ------------ */
+
+form .display-one-line {
+
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+   
+   
+    
+
+}
+
+form .float-left {
+    width: 50%;
+}
+
+form .float-right {
+    
+    
+    width: 50%;
+   
+}
