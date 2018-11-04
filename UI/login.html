@@ -13,10 +13,9 @@
 </head>
 
 <body>
-    <div class="login-box container">
-        <h1>SendIT</h1>
-        <h3>Sign in</h3>
-        <p> Welcome To SendIT</p>
+    <div id="login-box" class="container">
+        <h1>Send-IT</h1>
+        <p> Welcome To Send-IT</p>
         <form id="login-form">
             <div>
                 <input type="text" name="userEmail" required="">
@@ -26,8 +25,11 @@
                 <input type="password" name="userPassword" required="">
                 <label>Password</label>
             </div>
-            <div>
-                <input type="submit" name="btnForgotPassword" value="Forgot password?">
+            <div class="display-one-line">
+                <div class="float-left"></div>
+                <div cclass="float-right">
+                    <input id="btnForgotPassword" type="submit" name="btnForgotPassword" value="Forgot password?" onclick="window.location.href ='passwordRecovery.html'">
+                </div>
             </div>
 
             <div class="display-one-line">
