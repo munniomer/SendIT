@@ -47,6 +47,7 @@ img {
       font-size: 1.35em;
       margin: 0;
   }
+
   .main-nav {
       margin-top: 5px;
   }
@@ -58,16 +59,17 @@ img {
   }
   .main-nav a {
       font-size: .95em;
-      color: #2E8C9E;
+      color: #000;;
       font-weight: bold;
-      text-transform: uppercase;
+     
   }
   .main-nav a:hover {
-      color: #093a58;
+      color: #2E8C9E;
+      
   }
 
 .main-nav .active a{
-    color: #000;
+    color: #2E8C9E;
 }
   
   /* ---- Layout Containers ---- */
@@ -86,7 +88,11 @@ img {
     text-align: center;
     background-size: cover;
     background-position: center;
+    border-top:#2E8C9E 4px solid;
+    
 }
+
+
 
 .logo {
 	width: 190px;
@@ -94,19 +100,50 @@ img {
 .headline {
 	margin-bottom: 0;
 }
+
+.col {
+	padding: 1em;
+    margin: 0 .5em .8em;
+    background:#ffffff;
+    border-radius:5px 5px 0 0;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    border-top: 5px solid #2E8C9E;
+}
+
+
+
+.col p {
+    font-size: .95em;
+    margin: 0 0 1em 0;
+    line-height: 1.9;
+    text-align: justify;
+
+    
+}
+
+.col h3 {
+    color:#000;
+    text-align: center;
+}
+#services {
   
-#showcase h1{
-    margin-top:100px;
-    font-size:55px;
-    margin-bottom:10px;
-  }
-  
-  #showcase p{
-    font-size:20px;
-  }
-  
- 
-  
+  color: #2E8C9E;
+  text-align: center;
+  font-weight: bold;
+  font-size: 26px;
+  margin-bottom: 2%;
+}
+
+.main-footer {
+	background: #d9e4ea;
+	padding: 2em 0;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.asterik {
+    color:red;
+}
 /* styling the forms ------------ */
 
 
@@ -391,6 +428,7 @@ img {
 .Qoutations {
 	padding: 10px;
     background:#dcdcdc;
+    background: #d9e4ea;
    
   border-radius: 5px;
 	margin: 45px auto;
@@ -401,32 +439,18 @@ img {
 
 
 
+
+
 /* ================================= 
   Media Queries
 ==================================== */
 
 @media (min-width: 769px) {
-	.main-header {
-		width: 90%;
-		margin: 0 auto;
-    }
-    
-    tagline {
-		font-size: 1.4em;
-	}
-}
-@media (min-width: 1025px) {
-	.main-header {
-		width: 80%;
-		max-width: 1150px;
-	}
-}
-
-
-@media (min-width: 769px) {
 
 	.main-header,
-	.main-nav {
+	.main-nav,
+	.row
+	 {
 		display: flex;
 	}
 
@@ -435,7 +459,14 @@ img {
 		align-items: center;
 	}
 
+	.col {
+		flex: 1;
+	
+		display: flex;
+		flex-direction: column;
+	}
 }
+
 
 @media (min-width: 1025px) {
 
@@ -446,3 +477,23 @@ img {
 
 }
 
+
+
+@media (min-width: 769px) {
+	.main-header,
+	.row {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.tagline {
+		font-size: 1.4em;
+	}
+}
+
+@media (min-width: 1025px) {
+	.main-header,
+	.row {
+		width: 80%;
+		max-width: 1150px;
+	}
+}
