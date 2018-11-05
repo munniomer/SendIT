@@ -22,7 +22,8 @@ body {
 
 
 #signup-box,
-#login-box {
+#login-box,
+#password-recovery-box {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -38,7 +39,8 @@ body {
     
 }
 
-#login-box {
+#login-box,
+#password-recovery-box {
 
     width: 28%;
     height: 70%;
@@ -47,19 +49,22 @@ body {
 }
 
 #signup-box h1,
-#login-box h1 {
+#login-box h1,
+#password-recovery-box h1 {
     margin-bottom: 40px;
     color: #2E8C9E;
     text-shadow: 0 1px 1px rgba(0,0,0, 10)
 }
 
-#login-box h1 {
+#login-box h1,
+#password-recovery-box h1 {
     text-align: center;
     margin-top: 0;
     margin-bottom: 3%;
 }
 
-#login-box p {
+#login-box p,
+#password-recovery-box p {
     text-align: center;
     color: black;
     margin-top: 0;
@@ -67,14 +72,21 @@ body {
     margin-bottom: 20%; 
 }
 
-#signup-box p {
+#signup-box p,
+#password-recovery-box p {
     color: #000;
     margin-bottom: 70px;
-    
     font-size: 1.1em;
 }
+
+#password-recovery-box p {
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
 #signup-box input,
-#login-box input {
+#login-box input,
+#password-recovery-box input {
     width: 80%;
     box-shadow: none;
     border: none;
@@ -85,20 +97,24 @@ body {
     
 }
 
-#login-box input {
+#login-box input,
+#password-recovery-box input {
     width: 90%;
     margin-bottom: 50px;
+
 }
 
 
 
 #signup-box form div,
-#login-box form div {
+#login-box form div,
+#password-recovery-box form div {
     position: relative;
 }
 
 #signup-box form div label,
-#login-box form div label {
+#login-box form div label,
+#password-recovery-box form div label {
     position: absolute;
     top: 10x;
     left:0;
@@ -114,7 +130,9 @@ body {
 #signup-box input:focus ~ label,
 #signup-box input:valid ~ label,
 #login-box input:focus ~ label,
-#login-box input:valid ~ label { 
+#login-box input:valid ~ label,
+#password-recovery-box input:focus ~ label,
+#password-recovery-box input:valid ~ label { 
     top: -39px;
     left: 0;
     
@@ -126,7 +144,8 @@ body {
 }
 
 #signup-box #btn-signup,
-#login-box #btn-login  {
+#login-box #btn-login,
+#password-recovery-box #btn-password-recovery  {
     
     width: 40%;
     padding: 10px;
@@ -142,7 +161,8 @@ body {
    
  }
 
- #login-box #btn-login  {
+ #login-box #btn-login,
+ #password-recovery-box #btn-password-recovery  {
      margin-top:0;
  }
 
@@ -152,12 +172,15 @@ body {
     margin-bottom: 40px;
 }
 
- #login-box #btn-login  {
+ #login-box #btn-login,
+ #password-recovery-box #btn-password-recovery {
     width: 60%;
+
  }
  
  #signup-box #btn-signup:hover,
- #login-box #btn-login:hover   {
+ #login-box #btn-login:hover, 
+ #password-recovery-box #btn-password-recovery:hover {
      background: #53c0d6;
      color: #fff;
        
@@ -166,7 +189,8 @@ body {
  
  #signup-box #btn-login,
  #login-box #btn-signup,
- #login-box #btnForgotPassword  {
+ #login-box #btnForgotPassword,
+ #password-recovery-box #btn-login {
      width: 50%;
      padding: 10px;
      border: none;
@@ -179,7 +203,8 @@ body {
  }
  
  #login-box #btn-signup,
- #login-box #btnForgotPassword {
+ #login-box #btnForgotPassword,
+ #password-recovery-box #btn-login {
     width: 100%;
     margin-top: 0;
  }
@@ -187,7 +212,8 @@ body {
 
  #signup-box #btn-login:hover,
  #login-box #btn-signup:hover ,
- #login-box #btnForgotPassword:hover    {
+ #login-box #btnForgotPassword:hover,
+ #password-recovery-box #btn-login:hover {
      
      background-color:#e3f2fd;
      color: #2E8C9E;
@@ -199,7 +225,8 @@ body {
 /*Displaying form fields in one line ------------ */
 
 #signup-form .display-one-line,
-#login-form .display-one-line  {
+#login-form .display-one-line,
+#password-recovery-form .display-one-line  {
 
     display: flex;
     width: 100%;
@@ -211,12 +238,14 @@ body {
 }
 
 #signup-form .float-left,
-#login-form .float-left  {
+#login-form .float-left,
+#password-recovery-form  .float-left {
     width: 50%;
 }
 
 #signup-form .float-right,
-#login-form .float-right  {
+#login-form .float-right,
+#password-recovery-form  .float-right {
     
     
     width: 50%;
