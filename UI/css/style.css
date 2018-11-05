@@ -8,7 +8,7 @@ body {
     margin:0;
     padding:0;
     font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-
+    
 }
 
 .container {
@@ -17,6 +17,61 @@ body {
     overflow: hidden;
     
 }
+
+.main-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+.app-name a {
+      color: #093a58;
+    
+      
+  }
+  
+  a {
+      text-decoration: none;
+  }
+  
+  
+  /* ================================= 
+    Base Layout Styles
+  ==================================== */
+  
+  /* ---- Navigation ---- */
+  
+  .app-name {
+      font-size: 1.35em;
+      margin: 0;
+  }
+  .main-nav {
+      margin-top: 5px;
+  }
+  .app-name a,
+  .main-nav a {
+      text-align: center;
+      display: block;
+      padding: 10px 15px;
+  }
+  .main-nav a {
+      font-size: .95em;
+      color: #2E8C9E;
+      font-weight: bold;
+      text-transform: uppercase;
+  }
+  .main-nav a:hover {
+      color: #093a58;
+  }
+  
+  /* ---- Layout Containers ---- */
+  
+  .main-header {
+      padding-top: .5em;
+      padding-bottom: .5em;
+  }
+  
+
 
 /* styling the forms ------------ */
 
@@ -250,4 +305,49 @@ body {
     
     width: 50%;
    
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+	.main-header {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+@media (min-width: 1025px) {
+	.main-header {
+		width: 80%;
+		max-width: 1150px;
+	}
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+	.main-header,
+	.main-nav {
+		display: flex;
+	}
+
+	.main-header {
+		flex-direction: column;
+		align-items: center;
+	}
+
+}
+
+@media (min-width: 1025px) {
+
+	.main-header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
 }
