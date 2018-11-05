@@ -35,9 +35,11 @@ body {
   }
   
   
-  /* ================================= 
-    Base Layout Styles
-  ==================================== */
+img {
+    max-width: 100%;
+   
+}
+
   
   /* ---- Navigation ---- */
   
@@ -63,6 +65,10 @@ body {
   .main-nav a:hover {
       color: #093a58;
   }
+
+.main-nav .active a{
+    color: #000;
+}
   
   /* ---- Layout Containers ---- */
   
@@ -70,9 +76,37 @@ body {
       padding-top: .5em;
       padding-bottom: .5em;
   }
+
+.banner {
+	color: #093a58;
+    background: url('../img/banner.jpg') no-repeat;
+    min-height: 400px;
+	padding: 3.2em 0;
+    margin-bottom: 48px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+	width: 190px;
+}
+.headline {
+	margin-bottom: 0;
+}
   
-
-
+#showcase h1{
+    margin-top:100px;
+    font-size:55px;
+    margin-bottom:10px;
+  }
+  
+  #showcase p{
+    font-size:20px;
+  }
+  
+ 
+  
 /* styling the forms ------------ */
 
 
@@ -152,6 +186,7 @@ body {
     
 }
 
+
 #login-box input,
 #password-recovery-box input {
     width: 90%;
@@ -200,7 +235,7 @@ body {
 
 #signup-box #btn-signup,
 #login-box #btn-login,
-#password-recovery-box #btn-password-recovery  {
+#password-recovery-box #btn-password-recovery {
     
     width: 40%;
     padding: 10px;
@@ -214,6 +249,21 @@ body {
     margin-top: 20px;
     margin-bottom: 10px;
    
+ }
+
+ .Qoutations #btnQuote {
+    
+   margin-right:0;
+   margin-left: 0;
+   width: 150%;
+   padding: 10px;
+   margin-top: 10px;
+   font-weight: bold;
+   font-size: 1em;
+   background-color:#2E8C9E;
+   color: #fff;
+   border-radius: 8px;
+
  }
 
  #login-box #btn-login,
@@ -235,7 +285,8 @@ body {
  
  #signup-box #btn-signup:hover,
  #login-box #btn-login:hover, 
- #password-recovery-box #btn-password-recovery:hover {
+ #password-recovery-box #btn-password-recovery:hover,
+ .Qoutations #btnQuote:hover {
      background: #53c0d6;
      color: #fff;
        
@@ -307,6 +358,49 @@ body {
    
 }
 
+.Qoutations input {
+   
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+}
+
+.Qoutations label {
+    font-weight: bold;
+    color: #000;
+
+}
+
+.Qoutations {
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 80%;
+   
+}
+
+.Qoutations .item {
+	
+	padding: 15px;
+	margin: 5px;	
+    flex-grow: 1 200px;
+    color: #2E8C9E;
+
+}
+
+.Qoutations {
+	padding: 10px;
+    background:#dcdcdc;
+   
+  border-radius: 5px;
+	margin: 45px auto;
+  box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
+  margin-top: -100px;
+  
+}
+
+
+
 /* ================================= 
   Media Queries
 ==================================== */
@@ -315,6 +409,10 @@ body {
 	.main-header {
 		width: 90%;
 		margin: 0 auto;
+    }
+    
+    tagline {
+		font-size: 1.4em;
 	}
 }
 @media (min-width: 1025px) {
@@ -324,10 +422,6 @@ body {
 	}
 }
 
-
-/* ================================= 
-  Media Queries
-==================================== */
 
 @media (min-width: 769px) {
 
@@ -351,3 +445,4 @@ body {
 	}
 
 }
+
